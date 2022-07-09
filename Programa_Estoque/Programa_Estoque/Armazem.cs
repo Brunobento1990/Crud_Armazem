@@ -12,6 +12,7 @@ namespace Programa_Estoque
         public string Nome { get; set; }
         public string Endereco { get; set; }
         public List<Produto> Produtos = new List<Produto>();
+        public List<Funcionario> Funcionarios = new List<Funcionario>();
         public Armazem()
         {
             this.Id = BaseId;

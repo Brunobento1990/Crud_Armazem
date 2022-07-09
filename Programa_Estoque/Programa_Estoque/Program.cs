@@ -11,14 +11,18 @@ namespace Programa_Estoque
             Sair,
             CadastrarProduto,
             CadastrarArmazem,
+            CadastrarFuncionario,
             CadastrarProdutoArmazem,
+            CasdastrarFuncArmazem,
             RemoverProdutoArmazem,
+            RemoverfuncArmazem,
             AlterarArmazem,
             RemoverArmazem
 
         }
         static List<Produto> produtos = new List<Produto>();
         static List<Armazem> armazens = new List<Armazem>();
+        static List<Funcionario> funcionarios = new List<Funcionario>();
         static void Main(string[] args)
         {
 
@@ -26,11 +30,15 @@ namespace Programa_Estoque
             do
             {
                 Console.WriteLine("1- Cadastrar produto:");
-                Console.WriteLine("2- Cadastrar estoque:");
-                Console.WriteLine("3- Cadastrar produto no armazem:");
-                Console.WriteLine("4- Remover produto no armazem:");
-                Console.WriteLine("5- Alterar armazem:");
-                Console.WriteLine("6- Remover um armazem:");
+                Console.WriteLine("2- Cadastrar armazem:");
+                Console.WriteLine("3- Cadastrar cadastra funcionário:");
+                Console.WriteLine("4- Cadastrar produto no armazem:");
+                Console.WriteLine("5- Cadastrar funcionário no armazem:");
+                Console.WriteLine("6- Remover produto no armazem:");
+                Console.WriteLine("6- Remover funcionário do armazem:");
+                Console.WriteLine("7- Alterar armazem:");
+                Console.WriteLine("8- Remover um armazem:");
+                Console.WriteLine("0- Sair:");
                 Operacao = (Opcao)Convert.ToInt32(Console.ReadLine());
                 if (Operacao == Opcao.CadastrarProduto)
                 {
@@ -137,6 +145,66 @@ namespace Programa_Estoque
                         Console.WriteLine("- Armazem "+ armazemRemove + " não encontrado !");
                     }
                 }
+                if (Operacao == Opcao.CadastrarFuncionario)
+                {
+                    Funcionario funcionario = new Funcionario();
+                    Console.WriteLine("- Informe o nome do funcionário:");
+                    funcionario.Nome = Console.ReadLine();
+                    Console.WriteLine("- Informe a data de nascimento de " + funcionario.Nome);
+                    funcionario.DataNascimento = Console.ReadLine();
+                    funcionarios.Add(funcionario);
+                    Console.WriteLine("- Funcionário cadastrado com sucesso !");
+                }
+                if (Operacao == Opcao.CasdastrarFuncArmazem)
+                {
+                    Console.WriteLine("- Informe o nome do armazem que será cadastrado o funcionário:");
+                    string acharArmazem = Console.ReadLine();
+                    Armazem armazem = AcharArmazem(armazens,acharArmazem);
+                    if (armazem != null)
+                    {
+                        Console.WriteLine("- Informe o nome do funcionário:");
+                        string nome = Console.ReadLine();
+                        Funcionario funcionario = AcharFuncionario(funcionarios,nome);
+                        if (funcionario != null)
+                        {
+                            armazem.Funcionarios.Add(funcionario);
+                            Console.WriteLine($"{funcionario.Nome} cadastrado no armazem {armazem.Nome} !");
+                        }
+                        else
+                        {
+                            Console.WriteLine("- Funcionario não encontrado !");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("- Armazem não encontrado !");
+                    }
+                }
+                if (Operacao == Opcao.RemoverfuncArmazem)
+                {
+                    Console.WriteLine("- Informe o nome do armazem que será removido o funcionário:");
+                    string nomeArmazem = Console.ReadLine();
+                    Armazem armazem = AcharArmazem(armazens,nomeArmazem);
+                    if (armazem != null)
+                    {
+                        Console.WriteLine("- Informe o nome do funcionário:");
+                        string nome = Console.ReadLine();
+                        Funcionario funcionario = AcharFuncionario(funcionarios, nome);
+                        if (funcionario != null)
+                        {
+                            armazem.Funcionarios.Remove(funcionario);
+                            Console.WriteLine($"{funcionario.Nome} removido no armazem {armazem.Nome} !");
+                        }
+                        else
+                        {
+                            Console.WriteLine("- Funcionario não encontrado !");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("- Armazem não encontrado !");
+                    }
+                }
             } while (Operacao != Opcao.Sair);
         }
         static Armazem AcharArmazem(List<Armazem>armazem,string nome)
@@ -148,6 +216,11 @@ namespace Programa_Estoque
         {
             var produto = produtos.SingleOrDefault(x => x.Descricao.Contains(nome,StringComparison.CurrentCultureIgnoreCase));
             return produto;
+        }
+        static Funcionario AcharFuncionario(List<Funcionario> funcionarios, string nome)
+        {
+            var funcionario = funcionarios.SingleOrDefault(x => x.Nome.Contains(nome, StringComparison.CurrentCultureIgnoreCase));
+            return funcionario;
         }
     }   
 }

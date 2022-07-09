@@ -4,7 +4,16 @@ using System.Text;
 
 namespace Programa_Estoque
 {
-    class Funcionario
+    public class Funcionario
     {
+        private static int BaseID = 1;
+        public int Id { get; }
+        public string Nome { get; set; }
+        public string DataNascimento { get; set; }
+        public Funcionario()
+        {
+            this.Id = BaseID;
+            BaseID++;
+        }
     }
 }
