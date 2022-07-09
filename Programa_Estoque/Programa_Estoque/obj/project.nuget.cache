@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fm81IaUx2MmwoWIBPk5x+hlg35KKuYL2TvvD3sCrbDU894R8fxa/AamrTTMU84IlsZXiETtlJqyxTbxCWdCEOg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bruno.goncalves4\\Programa_Estoque\\Programa_Estoque\\Programa_Estoque\\Programa_Estoque.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bruno.goncalves4\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}

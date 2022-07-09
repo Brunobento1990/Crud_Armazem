@@ -1,0 +1,14 @@
+C:\Users\bruno.goncalves4\Programa_Estoque\Programa_Estoque\Programa_Estoque\bin\Debug\netcoreapp3.1\Programa_Estoque.exe
+C:\Users\bruno.goncalves4\Programa_Estoque\Programa_Estoque\Programa_Estoque\bin\Debug\netcoreapp3.1\Programa_Estoque.deps.json
+C:\Users\bruno.goncalves4\Programa_Estoque\Programa_Estoque\Programa_Estoque\bin\Debug\netcoreapp3.1\Programa_Estoque.runtimeconfig.json
+C:\Users\bruno.goncalves4\Programa_Estoque\Programa_Estoque\Programa_Estoque\bin\Debug\netcoreapp3.1\Programa_Estoque.runtimeconfig.dev.json
+C:\Users\bruno.goncalves4\Programa_Estoque\Programa_Estoque\Programa_Estoque\bin\Debug\netcoreapp3.1\Programa_Estoque.dll
+C:\Users\bruno.goncalves4\Programa_Estoque\Programa_Estoque\Programa_Estoque\bin\Debug\netcoreapp3.1\Programa_Estoque.pdb
+C:\Users\bruno.goncalves4\Programa_Estoque\Programa_Estoque\Programa_Estoque\obj\Debug\netcoreapp3.1\Programa_Estoque.csproj.AssemblyReference.cache
+C:\Users\bruno.goncalves4\Programa_Estoque\Programa_Estoque\Programa_Estoque\obj\Debug\netcoreapp3.1\Programa_Estoque.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bruno.goncalves4\Programa_Estoque\Programa_Estoque\Programa_Estoque\obj\Debug\netcoreapp3.1\Programa_Estoque.AssemblyInfoInputs.cache
+C:\Users\bruno.goncalves4\Programa_Estoque\Programa_Estoque\Programa_Estoque\obj\Debug\netcoreapp3.1\Programa_Estoque.AssemblyInfo.cs
+C:\Users\bruno.goncalves4\Programa_Estoque\Programa_Estoque\Programa_Estoque\obj\Debug\netcoreapp3.1\Programa_Estoque.csproj.CoreCompileInputs.cache
+C:\Users\bruno.goncalves4\Programa_Estoque\Programa_Estoque\Programa_Estoque\obj\Debug\netcoreapp3.1\Programa_Estoque.dll
+C:\Users\bruno.goncalves4\Programa_Estoque\Programa_Estoque\Programa_Estoque\obj\Debug\netcoreapp3.1\Programa_Estoque.pdb
+C:\Users\bruno.goncalves4\Programa_Estoque\Programa_Estoque\Programa_Estoque\obj\Debug\netcoreapp3.1\Programa_Estoque.genruntimeconfig.cache
